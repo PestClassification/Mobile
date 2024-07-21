@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FoIA</string>
+    <string name="login_user_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_confirm_password_hint">Confirm Password</string>
+    <string name="login_button">Log In</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="back_button_description">Arrow pointing to the left.</string>
+    <string name="welcome_area_text">Welcome again.</string>
+</resources>

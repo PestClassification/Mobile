@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FoIA</string>
+    <string name="login_user_hint">E-mail</string>
+    <string name="login_password_hint">Senha</string>
+    <string name="signup_confirm_password_hint">Confirme a Senha</string>
+    <string name="login_button">Entrar</string>
+    <string name="full_name_hint">Nome Completo</string>
+    <string name="signup_button">Cadastre-se</string>
+    <string name="back_button_description">Arrow pointing to the left.</string>
+    <string name="welcome_area_text">Seja bem-vindo.</string>
+</resources>

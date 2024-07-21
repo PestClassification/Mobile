@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoIA" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+<!--        <item name="colorSecondary">@color/primary</item>-->
+<!--        <item name="colorSecondaryVariant">@color/primary</item>-->
+<!--        <item name="colorOnSecondary">@android:color/black</item>-->
+
+        <item name="android:colorBackground">@color/dark_background</item>
+    </style>
+
+    <style name="EyeButton">
+        <item name="android:src">@drawable/eye_button_light</item>
+    </style>
+
+    <style name="EyeCrossedButton">
+        <item name="android:src">@drawable/eye_crossed_button_light</item>
+    </style>
+
+    <style name="BackButton">
+        <item name="android:src">@drawable/back_button_light</item>
+    </style>
+</resources>

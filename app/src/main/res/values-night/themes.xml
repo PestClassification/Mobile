@@ -3,7 +3,7 @@
     <style name="Base.Theme.FoIA" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
-        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimary">@color/light_primary</item>
         <item name="colorOnPrimary">@android:color/white</item>
 
 <!--        <item name="colorSecondary">@color/primary</item>-->
@@ -23,5 +23,9 @@
 
     <style name="BackButton">
         <item name="android:src">@drawable/back_button_light</item>
+    </style>
+
+    <style name="Logo">
+        <item name="android:src">@drawable/logo_light_icon</item>
     </style>
 </resources>

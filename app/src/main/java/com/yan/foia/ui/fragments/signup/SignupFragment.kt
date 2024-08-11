@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -14,6 +15,7 @@ class SignupFragment : Fragment() {
     private lateinit var backButton: ImageButton
     private lateinit var eyeButton: ImageButton
     private lateinit var eyeButtonConfirm: ImageButton
+    private lateinit var signupButton: Button
     private var _binding: FragmentSignupBinding? = null
 
     private val binding get() = _binding!!

@@ -2,5 +2,6 @@
 <resources>
     <color name="dark_background">#232423</color>
     <color name="light_background">#E9E9E0</color>
-    <color name="primary">#8ACF31</color>
+    <color name="light_primary">#8ACF31</color>
+    <color name="dark_primary">#196839</color>
 </resources>

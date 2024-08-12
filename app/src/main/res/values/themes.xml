@@ -12,15 +12,14 @@
     <style name="Theme.FoIA" parent="Base.Theme.FoIA" />
 
     <style name="EyeButton">
-        <item name="android:src">@drawable/eye_button_dark</item>
-    </style>
-
-    <style name="EyeCrossedButton">
-        <item name="android:src">@drawable/eye_crossed_button_dark</item>
+<!--        <item name="android:src">@drawable/eye_button_dark</item>-->
+        <item name="android:foreground">@drawable/eye_button_dark_selector</item>
+        <item name="android:background">@drawable/ripple_dark_effect</item>
     </style>
 
     <style name="BackButton">
         <item name="android:src">@drawable/back_arrow_dark</item>
+        <item name="android:background">@drawable/ripple_dark_effect</item>
     </style>
 
     <style name="Logo">

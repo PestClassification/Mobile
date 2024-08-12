@@ -57,6 +57,12 @@ class WelcomeFragment : Fragment() {
                 .replace(R.id.unlogged_fragment_container, LoginFragment(), null)
                 .addToBackStack(null)
                 .commit()
+
+//            ObjectAnimator.ofFloat(binding.logoUnlogged, "translationY", 100f).apply {
+//                duration = 200
+//                start()
+//            } // MELHOR FAZER COM O COMPOSE DEPOIS, ANIMAR A LOGO PRA ELA SE MOVER ENTRE A MUDANÇA DE TELA
+
         }
 
         return root

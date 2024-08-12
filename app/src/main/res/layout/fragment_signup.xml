@@ -22,7 +22,7 @@
             android:layout_marginBottom="40dp">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/logo_unlogged"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:contentDescription="TODO"
@@ -87,19 +87,17 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <ImageButton
+            <ToggleButton
                 android:id="@+id/eye_button"
                 style="@style/EyeButton"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginStart="270dp"
-                android:adjustViewBounds="true"
-                android:background="@drawable/ripple_effect"
-                android:padding="2dp"
-                android:scaleType="fitCenter"
+                android:layout_marginEnd="20dp"
+                android:text=""
+                android:textOn=""
+                android:textOff=""
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.60" />
 
@@ -129,19 +127,35 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <ImageButton
+<!--            <ImageButton-->
+<!--                android:id="@+id/eye_button_confirm"-->
+<!--                style="@style/EyeButton"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginStart="270dp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:background="@drawable/ripple_light_effect"-->
+<!--                android:padding="2dp"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.60" />-->
+
+            <ToggleButton
                 android:id="@+id/eye_button_confirm"
                 style="@style/EyeButton"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="270dp"
-                android:adjustViewBounds="true"
-                android:background="@drawable/ripple_effect"
-                android:padding="2dp"
-                android:scaleType="fitCenter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="7dp"
+                android:padding="10dp"
+                android:foregroundInsidePadding="True"
+                android:text=""
+                android:textOn=""
+                android:textOff=""
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.60" />
 
@@ -164,7 +178,7 @@
         android:layout_marginTop="16dp"
         android:padding="12dp"
         android:adjustViewBounds="true"
-        android:background="@drawable/ripple_effect"
+        android:background="@drawable/ripple_light_effect"
         android:contentDescription="@string/back_button_description"
         android:scaleType="fitCenter"
         style="@style/BackButton"

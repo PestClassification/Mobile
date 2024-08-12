@@ -22,7 +22,7 @@
             android:layout_marginBottom="40dp">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/logo_unlogged"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:contentDescription="TODO"
@@ -53,8 +53,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:layout_marginBottom="40dp">
+            android:layout_marginBottom="40dp"
+            android:background="@android:color/transparent">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/password_text_layout"
@@ -74,21 +74,38 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <ImageButton
+<!--            <ImageButton-->
+<!--                android:id="@+id/eye_button_a"-->
+<!--                style="@style/EyeButton"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginStart="270dp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:background="@drawable/ripple_light_effect"-->
+<!--                android:padding="2dp"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.60" />-->
+
+            <ToggleButton
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/eye_button"
-                android:background="@drawable/ripple_effect"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="270dp"
-                android:adjustViewBounds="true"
-                android:padding="2dp"
-                android:scaleType="fitCenter"
+                style="@style/EyeButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="7dp"
+                android:padding="10dp"
+                custom:foregroundInsidePadding="true"
+                android:text=""
+                android:textOn=""
+                android:textOff=""
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.60"
-                style="@style/EyeButton" />
+                app:layout_constraintVertical_bias="0.60" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -108,7 +125,7 @@
         android:layout_marginTop="16dp"
         android:padding="12dp"
         android:adjustViewBounds="true"
-        android:background="@drawable/ripple_effect"
+        android:background="@drawable/ripple_light_effect"
         android:contentDescription="@string/back_button_description"
         android:scaleType="fitCenter"
         style="@style/BackButton"

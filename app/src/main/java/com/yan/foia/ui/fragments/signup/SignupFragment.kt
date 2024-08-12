@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.yan.foia.R
 import com.yan.foia.databinding.FragmentSignupBinding
 
 class SignupFragment : Fragment() {
@@ -36,6 +37,12 @@ class SignupFragment : Fragment() {
             parentFragmentManager.popBackStack()
         }
 
+//        eyeButton = binding.eyeButton
+////        eyeButton.setOnClickListener { view ->
+//////            val view = view as ImageButton
+//////            view.setImage
+////
+////        }
         return root
     }
 

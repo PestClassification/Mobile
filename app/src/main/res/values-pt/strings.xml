@@ -9,4 +9,5 @@
     <string name="signup_button">Cadastre-se</string>
     <string name="back_button_description">Arrow pointing to the left.</string>
     <string name="welcome_area_text">Seja bem-vindo.</string>
+    <string name="placeholder_description">reservado</string>
 </resources>

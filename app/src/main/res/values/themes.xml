@@ -13,7 +13,10 @@
 
     <style name="EyeButton">
 <!--        <item name="android:src">@drawable/eye_button_dark</item>-->
-        <item name="android:foreground">@drawable/eye_button_dark_selector</item>
+        <item name="android:background">@drawable/eye_button_dark_selector</item>
+    </style>
+
+    <style name="EyeButtonClick">
         <item name="android:background">@drawable/ripple_dark_effect</item>
     </style>
 

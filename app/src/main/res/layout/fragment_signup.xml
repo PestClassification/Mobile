@@ -87,19 +87,34 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <ToggleButton
-                android:id="@+id/eye_button"
-                style="@style/EyeButton"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginEnd="20dp"
-                android:text=""
-                android:textOn=""
-                android:textOff=""
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/eye_button_click"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.60" />
+                android:layout_marginEnd="10dp"
+                app:layout_constraintVertical_bias="0.7"
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/EyeButtonClick" >
+
+                <ToggleButton
+                    android:id="@+id/eye_button"
+                    style="@style/EyeButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:clickable="false"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -107,7 +122,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="40dp"
-            android:background="@android:color/transparent">
+            android:background="@android:color/transparent" >
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/confirm_password_text_layout"
@@ -143,21 +158,45 @@
 <!--                app:layout_constraintTop_toTopOf="parent"-->
 <!--                app:layout_constraintVertical_bias="0.60" />-->
 
-            <ToggleButton
-                android:id="@+id/eye_button_confirm"
-                style="@style/EyeButton"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginEnd="7dp"
-                android:padding="10dp"
-                android:foregroundInsidePadding="True"
-                android:text=""
-                android:textOn=""
-                android:textOff=""
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/eye_button_confirm_click"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.60" />
+                android:layout_marginEnd="10dp"
+                app:layout_constraintVertical_bias="0.7"
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/EyeButtonClick">
+
+                <ToggleButton
+                    android:id="@+id/eye_button_confirm"
+                    style="@style/EyeButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:clickable="false"/>
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ripple_bg_confirm"-->
+<!--                    android:contentDescription="@string/placeholder_description"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:srcCompat="@drawable/ripple_light_effect"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,4 +1,4 @@
-package com.yan.foia.ui.fragments.welcome
+package com.yan.foia.ui.unlogged.fragments.welcome
 
 import androidx.lifecycle.ViewModel
 

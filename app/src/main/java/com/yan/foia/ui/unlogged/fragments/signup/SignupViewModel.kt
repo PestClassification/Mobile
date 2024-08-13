@@ -1,4 +1,4 @@
-package com.yan.foia.ui.fragments.signup
+package com.yan.foia.ui.unlogged.fragments.signup
 
 import androidx.lifecycle.ViewModel
 

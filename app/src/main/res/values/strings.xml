@@ -8,4 +8,5 @@
     <string name="signup_button">Sign Up</string>
     <string name="back_button_description">Arrow pointing to the left.</string>
     <string name="welcome_area_text">Welcome again.</string>
+    <string name="placeholder_description">placeholder</string>
 </resources>

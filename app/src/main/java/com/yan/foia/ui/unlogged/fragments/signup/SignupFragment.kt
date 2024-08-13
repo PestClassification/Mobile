@@ -1,4 +1,4 @@
-package com.yan.foia.ui.fragments.signup
+package com.yan.foia.ui.unlogged.fragments.signup
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ToggleButton
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.yan.foia.R
@@ -14,8 +16,10 @@ import com.yan.foia.databinding.FragmentSignupBinding
 class SignupFragment : Fragment() {
 
     private lateinit var backButton: ImageButton
-    private lateinit var eyeButton: ImageButton
-    private lateinit var eyeButtonConfirm: ImageButton
+    private lateinit var eyeButton: ToggleButton
+    private lateinit var eyeButtonClick: ConstraintLayout
+    private lateinit var eyeButtonConfirm: ToggleButton
+    private lateinit var eyeButtonConfirmClick: ConstraintLayout
     private lateinit var signupButton: Button
     private var _binding: FragmentSignupBinding? = null
 
@@ -37,12 +41,18 @@ class SignupFragment : Fragment() {
             parentFragmentManager.popBackStack()
         }
 
-//        eyeButton = binding.eyeButton
-////        eyeButton.setOnClickListener { view ->
-//////            val view = view as ImageButton
-//////            view.setImage
-////
-////        }
+        eyeButton = binding.eyeButton
+        eyeButtonClick = binding.eyeButtonClick
+        eyeButtonClick.setOnClickListener { _ ->
+            eyeButton.isChecked = !eyeButton.isChecked
+        }
+
+        eyeButtonConfirm = binding.eyeButtonConfirm
+        eyeButtonConfirmClick = binding.eyeButtonConfirmClick
+        eyeButtonConfirmClick.setOnClickListener { _ ->
+            eyeButtonConfirm.isChecked = !eyeButtonConfirm.isChecked
+        }
+
         return root
     }
 

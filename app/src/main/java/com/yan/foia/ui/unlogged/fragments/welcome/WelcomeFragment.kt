@@ -1,4 +1,4 @@
-package com.yan.foia.ui.fragments.welcome
+package com.yan.foia.ui.unlogged.fragments.welcome
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,8 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.yan.foia.R
 import com.yan.foia.databinding.FragmentWelcomeBinding
-import com.yan.foia.ui.fragments.login.LoginFragment
-import com.yan.foia.ui.fragments.signup.SignupFragment
+import com.yan.foia.ui.unlogged.fragments.login.LoginFragment
+import com.yan.foia.ui.unlogged.fragments.signup.SignupFragment
 
 class WelcomeFragment : Fragment() {
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/logo_light_icon"
+        android:title="CASA"/>
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/logo_light_icon"
+        android:title="HISTORIA"/>
+    <item
+        android:id="@+id/navigation_identified"
+        android:icon="@drawable/logo_light_icon"
+        android:title="IDENTIFICADO"/>
+</menu>

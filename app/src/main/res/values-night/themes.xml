@@ -5,6 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
         <item name="colorPrimary">@color/light_primary</item>
         <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:statusBarColor">@color/dark_primary</item>
 
 <!--        <item name="colorSecondary">@color/primary</item>-->
 <!--        <item name="colorSecondaryVariant">@color/primary</item>-->

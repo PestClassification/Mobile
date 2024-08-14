@@ -12,9 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoIA"
         tools:targetApi="31">
-        <activity android:name=".ui.logged.LoggedActivity" />
+        <activity android:name=".ui.unlogged.UnloggedActivity" />
         <activity
-            android:name=".ui.unlogged.UnloggedActivity"
+            android:name=".ui.logged.LoggedActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -29,4 +29,16 @@
     <style name="Logo">
         <item name="android:src">@drawable/logo_dark_icon</item>
     </style>
+
+    <style name="HomeButton">
+        <item name="android:icon">@drawable/home_dark_icon</item>
+    </style>
+
+    <style name="HistoryButton">
+        <item name="android:icon">@drawable/history_dark_icon</item>
+    </style>
+
+    <style name="CameraButton">
+        <item name="android:icon">@drawable/camera_dark_icon</item>
+    </style>
 </resources>

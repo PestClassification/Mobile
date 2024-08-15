@@ -2,14 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/logo_light_icon"
-        android:title="CASA"/>
+        android:icon="@drawable/home_light_icon"
+        android:iconTint="?attr/colorOnPrimary"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_camera"
+        android:icon="@drawable/camera_light_icon"
+        android:iconTint="?attr/colorOnPrimary"
+        android:title=""/>
     <item
         android:id="@+id/navigation_history"
-        android:icon="@drawable/logo_light_icon"
-        android:title="HISTORIA"/>
-    <item
-        android:id="@+id/navigation_identified"
-        android:icon="@drawable/logo_light_icon"
-        android:title="IDENTIFICADO"/>
+        android:icon="@drawable/history_light_icon"
+        android:iconTint="?attr/colorOnPrimary"
+        android:title=""/>
 </menu>

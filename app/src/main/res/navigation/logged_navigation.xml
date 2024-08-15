@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.yan.foia.ui.logged.fragments.home.HomeFragment"
+        android:name="com.yan.foia.logged.ui.fragments.home.HomeFragment"
         android:label="UM"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_history"
-        android:name="com.yan.foia.ui.logged.fragments.history.HistoryFragment"
+        android:name="com.yan.foia.logged.ui.fragments.history.HistoryFragment"
         android:label="DOIS"
         tools:layout="@layout/fragment_history" />
 
     <fragment
-        android:id="@+id/navigation_identified"
-        android:name="com.yan.foia.ui.logged.fragments.identified.IdentifiedFragment"
+        android:id="@+id/navigation_camera"
+        android:name="com.yan.foia.logged.ui.fragments.identified.IdentifiedFragment"
         android:label="TRES"
         tools:layout="@layout/fragment_identified" />
 

@@ -5,11 +5,11 @@
     android:id="@+id/unlogged"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.unlogged.UnloggedActivity">
+    tools:context=".unlogged.UnloggedActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/unlogged_fragment_container"
-        android:name="com.yan.foia.ui.unlogged.fragments.welcome.WelcomeFragment"
+        android:name="com.yan.foia.unlogged.ui.fragments.welcome.WelcomeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

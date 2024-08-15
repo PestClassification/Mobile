@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/dark_primary"> <!-- Ripple color :: WHITE -->
+    android:color="?attr/colorPrimary"> <!-- Ripple color :: WHITE -->
 
     <item>
         <color android:color="#00000000" /> <!-- Normal bg color :: RED -->

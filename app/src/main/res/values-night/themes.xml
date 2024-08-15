@@ -31,4 +31,16 @@
     <style name="Logo">
         <item name="android:src">@drawable/logo_light_icon</item>
     </style>
+
+    <style name="HomeButton">
+        <item name="android:icon">@drawable/home_light_icon</item>
+    </style>
+
+    <style name="HistoryButton">
+        <item name="android:icon">@drawable/history_light_icon</item>
+    </style>
+
+    <style name="CameraButton">
+        <item name="android:icon">@drawable/camera_light_icon</item>
+    </style>
 </resources>

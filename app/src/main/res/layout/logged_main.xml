@@ -15,7 +15,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/logged_nav_menu" />
+        app:menu="@menu/logged_nav_menu"
+        app:labelVisibilityMode="unlabeled"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/logged_nav_host"

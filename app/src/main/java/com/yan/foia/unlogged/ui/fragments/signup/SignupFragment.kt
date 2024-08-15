@@ -41,17 +41,17 @@ class SignupFragment : Fragment() {
             parentFragmentManager.popBackStack()
         }
 
-        eyeButton = binding.eyeButton
-        eyeButtonClick = binding.eyeButtonClick
-        eyeButtonClick.setOnClickListener { _ ->
-            eyeButton.isChecked = !eyeButton.isChecked
-        }
-
-        eyeButtonConfirm = binding.eyeButtonConfirm
-        eyeButtonConfirmClick = binding.eyeButtonConfirmClick
-        eyeButtonConfirmClick.setOnClickListener { _ ->
-            eyeButtonConfirm.isChecked = !eyeButtonConfirm.isChecked
-        }
+//        eyeButton = binding.eyeButton
+//        eyeButtonClick = binding.eyeButtonClick
+//        eyeButtonClick.setOnClickListener { _ ->
+//            eyeButton.isChecked = !eyeButton.isChecked
+//        }
+//
+//        eyeButtonConfirm = binding.eyeButtonConfirm
+//        eyeButtonConfirmClick = binding.eyeButtonConfirmClick
+//        eyeButtonConfirmClick.setOnClickListener { _ ->
+//            eyeButtonConfirm.isChecked = !eyeButtonConfirm.isChecked
+//        }
 
         return root
     }

@@ -1,5 +1,6 @@
 package com.yan.foia.unlogged.ui.fragments.login
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,8 +14,9 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.google.android.material.textfield.TextInputLayout.END_ICON_PASSWORD_TOGGLE
+import com.yan.foia.R
 import com.yan.foia.databinding.FragmentLoginBinding
-import com.yan.foia.unlogged.control.LoginValidator
+import com.yan.foia.logged.LoggedActivity
 
 class LoginFragment : Fragment() {
 
@@ -33,8 +35,6 @@ class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null
 
     private val binding get() = _binding!!
-
-    private var validator = LoginValidator()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -67,8 +67,10 @@ class LoginFragment : Fragment() {
 
         loginButton = binding.loginButton
         loginButton.setOnClickListener { _ ->
-            if(validator.validadeLoginData(emailInputA.text.toString(), passwordInputB.text.toString())) {
+            if(loginViewModel.validateLoginData(emailInputA.text.toString(), passwordInputB.text.toString())) {
                 println(emailInputA.text.toString())
+                val newActivity = Intent(requireActivity(), LoggedActivity::class.java)
+                startActivity(newActivity)
             }
         }
 

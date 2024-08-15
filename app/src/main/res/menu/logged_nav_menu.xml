@@ -9,7 +9,7 @@
         android:id="@+id/navigation_camera"
         android:icon="@drawable/camera_light_icon"
         android:iconTint="?attr/colorOnPrimary"
-        android:title=""/>
+        android:title="" />
     <item
         android:id="@+id/navigation_history"
         android:icon="@drawable/history_light_icon"

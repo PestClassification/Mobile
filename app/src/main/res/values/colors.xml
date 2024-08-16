@@ -4,4 +4,6 @@
     <color name="light_background">#E9E9E0</color>
     <color name="light_primary">#8ACF31</color>
     <color name="dark_primary">#196839</color>
+    <color name="primary_font">#000000</color>
+
 </resources>

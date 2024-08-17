@@ -11,4 +11,6 @@
     <string name="placeholder_description">placeholder</string>
 
     <string name="description">Description</string>
+    <string name="test_text">Red Ladybug</string>
+
 </resources>

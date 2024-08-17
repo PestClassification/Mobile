@@ -46,4 +46,21 @@ class IdentifiedFragment : Fragment() {
         return root
     }
 
-}
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val ex = view?.findViewById<ExpandableLayout>(R.id.expandable) //recupera o id
+        var g = 0
+        //duvida no comportamento e implicações do operador non-nullable: '?.'
+        ex?.parentLayout?.setOnClickListener{
+            if (g==0){
+                g = 1
+                ex.expand()
+            }
+            else{
+                g = 0
+                ex.collapse()
+            }
+    }
+
+}}

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="256dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
         app:cardBackgroundColor="#00FFFFFF"
         app:cardCornerRadius="32dp"
@@ -21,7 +21,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"
+        tools:cardBackgroundColor="@color/design_default_color_error">
 
         <ImageView
             android:id="@+id/insect_image"
@@ -31,35 +32,48 @@
             android:adjustViewBounds="true"
             android:cropToPadding="true"
             android:scaleType="centerCrop"
-            tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+            android:visibility="visible"
+            app:srcCompat="@drawable/foto_teste"
+            tools:srcCompat="@drawable/foto_teste"
+            tools:visibility="visible" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/insect_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:textColor="@color/primary_font"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_name"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_wrap"
-        tools:text="Larva Come come" />
+        tools:fontFamily="@font/poppins_semibold"
+        tools:text="@string/test_text"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/scientific_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="32dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/primary_font"
         android:textFontWeight="256"
         android:textStyle="italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/expandable"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/insect_name"
-        tools:text="Larvaranis fritiz" />
+        tools:text="@string/test_text"
+        tools:visibility="visible" />
 
     <com.skydoves.expandablelayout.ExpandableLayout
         android:id="@+id/expandable"

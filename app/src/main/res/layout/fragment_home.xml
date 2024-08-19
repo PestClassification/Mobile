@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/welcome_logged"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/rounded_square_bg"
+            app:icon="@drawable/reports_teste"
+            app:iconGravity="end"
+            app:iconSize="30dp"
+            app:iconTint="?attr/colorOnPrimary"
+            android:text="@string/report"
+            android:textAlignment="viewStart"
+            android:textSize="25sp"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/rounded_square_bg"
+            android:text="@string/history"
+            android:textAlignment="viewStart"
+            android:textSize="25sp"
+            android:drawableEnd="@drawable/history_dark_icon"
+            app:icon="@drawable/history_dark_icon"
+            app:iconGravity="end"
+            app:iconSize="30dp" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

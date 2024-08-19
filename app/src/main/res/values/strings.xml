@@ -9,4 +9,7 @@
     <string name="back_button_description">Arrow pointing to the left.</string>
     <string name="welcome_area_text">Welcome again.</string>
     <string name="placeholder_description">placeholder</string>
+    <string name="welcome_logged">Hello, %1$s!</string>
+    <string name="history">History</string>
+    <string name="report">Reports</string>
 </resources>

@@ -150,7 +150,7 @@
         android:layout_marginTop="16dp"
         android:padding="12dp"
         android:adjustViewBounds="true"
-        android:background="@drawable/ripple_light_effect"
+        android:background="@drawable/ripple_effect"
         android:contentDescription="@string/back_button_description"
         android:scaleType="fitCenter"
         style="@style/BackButton"

@@ -12,11 +12,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
+        android:hapticFeedbackEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/logged_nav_menu"
-        app:labelVisibilityMode="unlabeled"/>
+        app:labelVisibilityMode="unlabeled" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/logged_nav_host"

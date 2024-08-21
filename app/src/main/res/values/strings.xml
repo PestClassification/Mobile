@@ -11,6 +11,13 @@
     <string name="placeholder_description">placeholder</string>
 
     <string name="description">Description</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="products">Products</string>
+
+    <!--string usada para teste, substituir por texto real-->
     <string name="test_text">Red Ladybug</string>
+    <string name="description_text">Ela é pequena, de cor branca translúcida, com asas cobertas por um pó branco. Este tipo de mosca branca é conhecido por causar danos significativos às plantas ao se alimentar da seiva, o que pode resultar em perda de vigor, amarelecimento das folhas e transmissão de vírus.</string>"
+    <string name="recommendation_text">Rotação de Culturas Remoção de Plantas Infestadas Introduzir pedrador: joaninha, fungos, como Beauveria bassiana Telas de Proteção</string>"
+
 
 </resources>

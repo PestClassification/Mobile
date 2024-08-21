@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/description"
+            android:text="@string/recommendations"
             android:textColor="@color/secondary_font"
             android:paddingVertical="16dp"
             android:layout_marginHorizontal="28dp"

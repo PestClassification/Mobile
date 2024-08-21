@@ -5,5 +5,5 @@
     <color name="light_primary">#8ACF31</color>
     <color name="dark_primary">#196839</color>
     <color name="primary_font">#000000</color>
-
+    <color name="secondary_font">#313331</color>
 </resources>

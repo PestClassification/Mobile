@@ -12,4 +12,7 @@
     <string name="welcome_logged">Hello, %1$s!</string>
     <string name="history">History</string>
     <string name="report">Reports</string>
+    <string name="texto_button_fragment_history_1">Fazenda Belém</string>
+    <string name="text_history">Histórico</string>
+    <string name="texto_button_fragment_history_2">Mais Locais</string>
 </resources>

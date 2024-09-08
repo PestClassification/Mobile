@@ -1,6 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:theme="@style/Base.Theme.FoIA">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:foregroundGravity="center">
+
+        <LinearLayout
+            android:id="@+id/firstLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:gravity="start"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background_button"
+                android:padding="15dp"
+                android:text="@string/texto_button_fragment_history_1"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="start"
+                android:textAllCaps="false"
+                android:textColor="@color/preto"
+                android:layout_gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background_button"
+                android:padding="15dp"
+                android:text="@string/texto_button_fragment_history_2"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="start"
+                android:textAllCaps="false"
+                android:textColor="@color/preto"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/secondLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/firstLinearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_history"/>
+
+
+            <TextView
+                android:id="@+id/text_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/text_history"
+                android:textSize="24dp"
+                android:textColor="@color/preto"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filter_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondLinearLayout"
+            android:layout_margin="20dp">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_filter"
+                android:contentDescription="Filtro"
+                android:layout_gravity="end"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_menu"
+                android:contentDescription="Filtro"
+                android:layout_gravity="end"/>
+
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/listaInsetos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/filter_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="0dp"
+            android:layout_margin="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/background_car_history">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/joaninha" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mosca Branca - Bemissia"
+                            android:textColor="@color/preto"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Local: coordenadas aqui" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Data: 12 de agosto de 2024" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Horário: 13:45"
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </ScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
